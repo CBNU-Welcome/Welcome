@@ -2,7 +2,7 @@
 Welcome is a front-end web page for international students in Chungbuk National University.
 
 ### Developers
-<table>
+<table align="center">
 <tr align="center">
 <td><a href="https://github.com/DongWooE">박성진</a></td>
 <td><a href="https://github.com/L-o-g-a-n">이동우</a></td>
