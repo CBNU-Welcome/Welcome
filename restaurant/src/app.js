@@ -8,7 +8,7 @@ function runApp() {
 
 function loadMapsJSAPI() {
     //google api 설정
-    const googleMapsAPIKey = 'AIzaSyDNwxa3PHKGAkVNz__Ec_j2iIPZF--rsZo';
+    const googleMapsAPIKey = process.env.GOOGLE_MAP_KEY;
     const googleMapsAPIURI = `https://maps.googleapis.com/maps/api/js?key=${googleMapsAPIKey}&callback=runApp`;
     
     //html과 연동 부분
