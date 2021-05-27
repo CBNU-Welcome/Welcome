@@ -3,6 +3,10 @@ html, body {
     overflow: auto;
 }
 
+ul{
+    padding-left: 30px;
+}
+
 .carousel-inner img {
     height: 100vh;
     width: 100%;
@@ -24,14 +28,25 @@ html, body {
     z-index: 9;
 }
 
-#button1 {
-    width:120px
+.linkButton {
+    width: 120px;
+    height: 40px;
+    background-color: #8D264E;
+    color: white;
+    box-shadow: 0 4px 16px rgba(141, 38, 78, 0.3); /*그림자*/
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0px;
+    font-family: "Times New Roman", serif;
+    transition: 0.5s; /*부드러운 변화 추가*/
+    margin-right: 20px;
 }
 
-#linkButton {
-    font-family: "Times New Roman", serif;
-    font-weight: bold;
-    font-size: 25px;
+.linkButton:hover {
+    background-color: rgba(141, 38, 78, 0.8);
+    cursor: pointer; /*마우스 커서 포인터로 변경*/
+    box-shadow: 0 2px 4px rgba(141, 38, 78, 0.7);
 }
 
 #slides {
