@@ -1,6 +1,6 @@
 html, body {
-    height: 100%;
-    overflow: auto;
+    /*height: 100%;*/
+    /*overflow: auto;*/
 }
 
 ul{
@@ -8,12 +8,13 @@ ul{
 }
 
 .carousel-inner img {
+
     height: 100vh;
     width: 100%;
 }
 
 .carousel-caption {
-    position: absolute;
+    /*position: absolute;*/
     top: 20%;
     transform: translateY(-20%);
 }
@@ -25,7 +26,8 @@ ul{
 }
 
 .navbar {
-    z-index: 9;
+    /*z-index: 9;*/
+    position: fixed;
 }
 
 .linkButton {
@@ -50,7 +52,7 @@ ul{
 }
 
 #slides {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
 }

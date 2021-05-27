@@ -11,24 +11,28 @@
 <body>
 <!--Navigation-->
 <div id="header">
-    <nav class="navbar navbar-expand-md navbar-light sticky-top ml-auto" style="margin-left: 30px; margin-top: 15px">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="margin-left: 30px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/cbnu_logo_eng.png" height="86" width="301"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive" style="margin-right: 200px">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a href="#">
                             <button class="linkButton">Home</button>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <button class="linkButton">Information</button>
+                        <a href="../abroad/abroad.html">
+                            <button class="linkButton">Information</button>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <button class="linkButton">Restaurant</button>
+                        <a href="../restaurant/restaurant.html">
+                            <button class="linkButton">Restaurant</button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -50,26 +54,26 @@
                     <h1 class="display-2">Welcome To<br>CHUNGBUK National University</h1>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="5000">
                 <img src="img/carousel_bg_2.png">
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="5000">
                 <img src="img/carousel_bg_3.png">
             </div>
         </div>
-
-        <!--왜인지 모르겠지만 여기에 추가해야 아래로 들어감-->
-<!--        <p style="background-color: red">-->
-<!--            hello world-->
-<!--        </p>-->
     </div>
-<!--    <p style="background-color: green">-->
-<!--        hello world-->
-<!--    </p>-->
-
+    <div id="informationDiv">
+        <p>Div for Short Information</p>
+    </div>
+    <div id="emergencyDiv">
+        <p>Div for Emergency Things</p>
+    </div>
 </div>
-
-
+<div id="footer">
+    <div>
+        <p>Div for Developer and Other links</p>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
