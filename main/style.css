@@ -24,8 +24,19 @@ html, body {
     z-index: 9;
 }
 
+#button1 {
+    width:120px
+}
+
+#linkButton {
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 #slides {
     position: absolute;
     width: 100%;
     top: 0;
 }
+
