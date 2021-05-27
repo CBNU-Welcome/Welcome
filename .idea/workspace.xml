@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[ADD] (#4) - Bootstrap 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
     </list>
@@ -46,8 +45,16 @@
       <workItem from="1621560381935" duration="991000" />
       <workItem from="1621780738753" duration="183000" />
       <workItem from="1621780923900" duration="873000" />
-      <workItem from="1622098218851" duration="1560000" />
+      <workItem from="1622098218851" duration="2754000" />
     </task>
+    <task id="LOCAL-00001" summary="[ADD] (#4) - Bootstrap 추가">
+      <created>1622099964570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622099964570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,5 +70,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[ADD] (#4) - Bootstrap 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (#4) - Bootstrap 추가" />
   </component>
 </project>
