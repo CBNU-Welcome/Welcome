@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise3</title>
+  </head>
+  <body>
+    <div id = "map" style = "width:800px; height:500px"></div>
+    <button type="button" id="buttonMiddle">충북대 중문</button>
+    <button type="button" id="buttonFront">충북대 정문</button>
+    <button type="button" id="buttonBack">충북대 후문</button>
+    <button type="button" id="buttonWest">충북대 서문</button>
+    <script type="text/javascript">
+
+      function myMap(){
+        var mapCanvas = document.getElementById("map");
+        var myCenter = new google.maps.LatLng(36.62903526993053, 127.45630791115278);
+        var mapOptions = {
+            center: myCenter,
+            zoom:15
+        };
+        map = new google.maps.Map(mapCanvas, mapOptions);
+        var t1 = document.getElementById("buttonMiddle");
+        var t2 = document.getElementById("buttonFront");
+        var t3 = document.getElementById("buttonBack");
+        var t4 = document.getElementById("buttonWest");
+
+        t1.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.633619808613375, 127.46043918416818));
+          });
+
+        t2.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.63202593139542, 127.45219008231695));
+          });
+
+        t3.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.631124881824896, 127.46162208231705));
+          });
+
+        t4.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.62667852694975, 127.45175753126644));
+          });
+
+         }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4qUetyog_BW_P7-o41_M5QWpKFSVWQ2E&callback=myMap"></script>
+  </body>
+</html>
