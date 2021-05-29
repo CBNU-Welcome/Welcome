@@ -3,7 +3,7 @@ html, body {
     /*overflow: auto;*/
 }
 
-ul{
+ul {
     padding-left: 30px;
 }
 
@@ -51,9 +51,54 @@ ul{
     box-shadow: 0 2px 4px rgba(141, 38, 78, 0.7);
 }
 
+table {
+    /*solid-color: crimson;*/
+    border: 1px solid crimson;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+th, td {
+    border: 1px solid crimson;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
 #slides {
     position: relative;
     width: 100%;
     top: 0;
 }
 
+#infoDiv1 {
+    display: flex;
+    align-items: center;
+}
+
+#infoDiv2 {
+    display: flex;
+    align-items: center;
+}
+
+#infoDiv3 {
+    display: flex;
+    align-items: center;
+}
+
+#infoDiv1Text {
+    font-family: "Times New Roman", serif;
+    font-size: 1.5vw;
+    line-height: 1.0;
+}
+
+#infoDiv2Text {
+    font-family: "Times New Roman", serif;
+    font-size: 1.5vw;
+    line-height: 1.0;
+}
+
+#infoDiv3Text {
+    font-family: "Times New Roman", serif;
+    font-size: 1.5vw;
+    line-height: 1.0;
+}
