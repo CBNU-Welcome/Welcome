@@ -49,7 +49,7 @@
     }
   </script>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
 
     // Load the Visualization API and the corechart package.
     google.charts.load('current', { 'packages': ['corechart'] });
@@ -85,7 +85,7 @@
       var chart1 = new google.visualization.PieChart(document.getElementById('pie_2019'));
       chart1.draw(data1, options1);
     }
-  </script>
+  </script> -->
 
   <script type="text/javascript">
     google.charts.load('current', {
@@ -97,7 +97,8 @@
     google.charts.setOnLoadCallback(drawRegionsMap);
 
     function drawRegionsMap() {
-      var data = google.visualization.arrayToDataTable([
+
+      const data = google.visualization.arrayToDataTable([
         ['Country', 'Number of students'],
         ['GA', 1],
         ['TW', 1],
@@ -121,18 +122,18 @@
         ['PH', 0],
       ]);
 
-      var options = {
+      const options = {
         backgroundColor: '#FFFFFF',
         colorAxis: { colors: ['#5CAB7D', '#44633F'] },
       };
 
-      var chart = new google.visualization.GeoChart(document.getElementById('geo_2020'));
+      const chart = new google.visualization.GeoChart(document.getElementById('geo_2020'));
 
       chart.draw(data, options);
     }
   </script>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     google.charts.load('current', {
       'packages': ['geochart'],
       // Note: you will need to get a mapsApiKey for your project.
@@ -172,56 +173,19 @@
 
       chart1.draw(data1, options1);
     }
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript">
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5;
-  var navbarHeight = $('header').outerHeight();
-  $(window).scroll(function (event) {
-      didScroll = true;
-    });
-
-  setInterval(function () {
-    if (didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 250);
-
-  function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if (Math.abs(lastScrollTop - st) <= delta)
-      return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight) {
-      // Scroll Down
-      $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-      // Scroll Up
-      if (st + $(window).height() < $(document).height()) {
-        $('header').removeClass('nav-up').addClass('nav-down');
-      }
-    }
-
-    lastScrollTop = st;
-  }
-  </script>
+  </script> -->
 </head>
 
 <body>
   <!--Navigation-->
   <header>
   <div id="header">
-    <!-- <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: bisque; width: 100%; height: 90px;"> -->
     <nav class="navbar navbar-expand-md navbar-light sticky-top" style="margin-left: 30px;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/cbnu_logo_eng.png" alt="cbnu_log_eng" class="img-fluid" height="86" width="301"></a>
+        <a class="navbar-brand" href="#">
+          <span class="blind">충북대학교 배너이미지</span>
+          <img src="img/cbnu_logo_eng.png" alt="" class="img-fluid" height="86" width="301">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -248,14 +212,21 @@
     </nav>
   </div>
   </header>
-  <main>
+  <div role="main">
   <div class="container-fluid" style="padding: 0px;">
     <img src="../abroad/img/students.jpg" alt="students.jpg" class="img-fluid" style="display:inline; height: 100vh; width: 100%;">
   </div>
-  <div id="pie_2020"></div>
-  <div id="geo_2020" style="width: 50%; height: 30%;"></div>
-  </main>
-  <footer></footer>
+  <div id="pie_2020" class="pie_container"></div>
+  <div id="geo_2020" class="geo_container"></div>
+  </div>
+  
+  <footer id="footer">
+    <div>
+      <p>Div for Developer and Other links</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./abroad.js"></script>
 </body>
 
 </html>

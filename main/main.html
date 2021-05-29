@@ -1,81 +1,141 @@
 <!--TODO : 이원중 / 메인 페이지-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Weclome to CBNU</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <title>Weclome to CBNU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <!--Navigation-->
-<div id="header">
+<header id="header">
     <nav class="navbar navbar-expand-md navbar-light sticky-top" style="margin-left: 30px;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/cbnu_logo_eng.png" alt="cbnu_logo_eng" class="img-fluid" height="86" width="301"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item">
-                        <a href="../main/main.html">
-                            <button class="linkButton">Home</button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../abroad/abroad.html">
-                            <button class="linkButton">Information</button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../restaurant/restaurant.html">
-                            <button class="linkButton">Restaurant</button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/cbnu_logo_eng.png" alt="cbnu_log_eng" class="img-fluid"
+            height="86" width="301"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="../main/main.html">
+                <button class="linkButton">Home</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../abroad/abroad.html">
+                <button class="linkButton">Information</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../restaurant/restaurant.html">
+                <button class="linkButton">Restaurant</button>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</div>
-<div id="body">
-    <div id="slides" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="img/carousel_bg_1.png">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Welcome To<br>CHUNGBUK National University</h1>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="img/carousel_bg_2.png">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="img/carousel_bg_3.png">
-            </div>
-        </div>
-    </div>
-    <div id="informationDiv">
-        <p>Div for Short Information</p>
-    </div>
-    <div id="emergencyDiv">
+</header>
+  <div role="main">
+      <div id="slides" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true"
+                      aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="img/carousel_bg_1.png">
+                  <div class="carousel-caption">
+                      <h1 class="display-2">Welcome To<br>CHUNGBUK National University</h1>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                  <img src="img/carousel_bg_2.png">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                  <img src="img/carousel_bg_3.png">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="informationDiv">
+    <p>Div for Short Information</p>
+  </div>
+  <div id="emergencyDiv">
+    <p>Div for Emergency Things</p>
+  </div>
+  <div id="emergencyDiv">
+    <p>Div for Emergency Things</p>
+  </div>
+      <div id="emergencyDiv">
         <p>Div for Emergency Things</p>
-    </div>
-</div>
-<div id="footer">
+      </div>
+          <div id="emergencyDiv">
+            <p>Div for Emergency Things</p>
+          </div>
+              <div id="emergencyDiv">
+                <p>Div for Emergency Things</p>
+              </div>
+                  <div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div><div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div>
+                  <div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div>
+                  <div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div>
+                  <div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div>
+                  <div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div>
+                  <div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div>
+                  <div id="emergencyDiv">
+                    <p>Div for Emergency Things</p>
+                  </div>
+
+  <footer id="footer">
     <div>
-        <p>Div for Developer and Other links</p>
+      <p>Div for Developer and Other links</p>
     </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-</body>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+          crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+  </body>
 </html>
