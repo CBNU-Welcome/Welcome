@@ -1,11 +1,232 @@
 <!--TODO : 박성진 / 유학생회 페이지-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <title>Info of International Students</title>
+  <title>Weclome to CBNU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', { 'packages': ['corechart'] });
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Topping');
+      data.addColumn('number', 'Slices');
+      data.addRows([
+        ['China', 495],
+        ['Mongolia', 115],
+        ['Uzbekistan', 102],
+        ['Vietnam', 87],
+        ['Thailand', 6],
+      ]);
+
+      // Set chart options
+      var options = {
+        'title': 'Top 5 countries for international students at CBNU in 2020',
+        'width': 800,
+        'height': 500
+      };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('pie_2020'));
+      chart.draw(data, options);
+    }
+  </script>
+
+  <!-- <script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', { 'packages': ['corechart'] });
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart1);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart1() {
+
+      // Create the data table.
+      var data1 = new google.visualization.DataTable();
+      data1.addColumn('string', 'Topping');
+      data1.addColumn('number', 'Slices');
+      data1.addRows([
+        ['China', 669],
+        ['Mongolia', 138],
+        ['Vietnam', 61],
+        ['Uzbekistan', 27],
+        ['Thailand', 21],
+      ]);
+
+      // Set chart options
+      var options1 = {
+        'title': 'Top 5 countries for international students at CBNU in 2019',
+        'width': 800,
+        'height': 500
+      };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart1 = new google.visualization.PieChart(document.getElementById('pie_2019'));
+      chart1.draw(data1, options1);
+    }
+  </script> -->
+
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['geochart'],
+      // Note: you will need to get a mapsApiKey for your project.
+      // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+      'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+
+      const data = google.visualization.arrayToDataTable([
+        ['Country', 'Number of students'],
+        ['GA', 1],
+        ['TW', 1],
+        ['DE', 1],
+        ['RU', 5],
+        ['MN', 115],
+        ['BD', 1],
+        ['VE', 1],
+        ['VN', 87],
+        ['BY', 2],
+        ['ES', 2],
+        ['AU', 1],
+        ['UZ', 102],
+        ['ID', 3],
+        ['JP', 1],
+        ['CN', 495],
+        ['TJ', 1],
+        ['TH', 6],
+        ['TN', 1],
+        ['FR', 5],
+        ['PH', 0],
+      ]);
+
+      const options = {
+        backgroundColor: '#FFFFFF',
+        colorAxis: { colors: ['#5CAB7D', '#44633F'] },
+      };
+
+      const chart = new google.visualization.GeoChart(document.getElementById('geo_2020'));
+
+      chart.draw(data, options);
+    }
+  </script>
+
+  <!-- <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['geochart'],
+      // Note: you will need to get a mapsApiKey for your project.
+      // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+      'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap1);
+
+    function drawRegionsMap1() {
+      var data1 = google.visualization.arrayToDataTable([
+        ['Country', 'Number of students'],
+        ['GA', 1],
+        ['TW', 5],
+        ['DE', 1],
+        ['RU', 5],
+        ['MN', 115],
+        ['BD', 1],
+        ['VE', 1],
+        ['VN', 87],
+        ['BY', 2],
+        ['ES', 2],
+        ['AU', 1],
+        ['UZ', 102],
+        ['ID', 3],
+        ['JP', 1],
+        ['CN', 495],
+        ['TJ', 1],
+        ['TH', 6],
+        ['TN', 1],
+        ['FR', 5],
+        ['PH', 0],
+      ]);
+
+      var options1 = {};
+
+      var chart1 = new google.visualization.GeoChart(document.getElementById('geo_2019'));
+
+      chart1.draw(data1, options1);
+    }
+  </script> -->
+</head>
+
+<body>
+  <!--Navigation-->
+  <header>
+  <div id="header">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="margin-left: 30px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="blind">충북대학교 배너이미지</span>
+          <img src="img/cbnu_logo_eng.png" alt="" class="img-fluid" height="86" width="301">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="../main/main.html">
+                <button class="linkButton">Home</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../abroad/abroad.html">
+                <button class="linkButton">Information</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../restaurant/restaurant.html">
+                <button class="linkButton">Restaurant</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </header>
+  <div role="main">
+  <div class="container-fluid" style="padding: 0px;">
+    <img src="../abroad/img/students.jpg" alt="students.jpg" class="img-fluid" style="display:inline; height: 100vh; width: 100%;">
+  </div>
+  <div id="pie_2020" class="pie_container"></div>
+  <div id="geo_2020" class="geo_container"></div>
+  </div>
+  
+  <footer id="footer">
+    <div>
+      <p>Div for Developer and Other links</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./abroad.js"></script>
 </body>
+
 </html>

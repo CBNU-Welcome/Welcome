@@ -1,6 +1,8 @@
-html, body {
-    /*height: 100%;*/
-    /*overflow: auto;*/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.2s ease-in-out;
 }
 
 ul {
@@ -8,7 +10,6 @@ ul {
 }
 
 .carousel-inner img {
-
     height: 100vh;
     width: 100%;
 }
@@ -26,14 +27,18 @@ ul {
 }
 
 .navbar {
-    /*z-index: 9;*/
+    /* z-index: 9; */
     position: fixed;
+}
+
+.visible {
+    display: none;
 }
 
 .linkButton {
     width: 120px;
     height: 40px;
-    background-color: #8D264E;
+    background-color: #8d264e;
     color: white;
     box-shadow: 0 4px 16px rgba(141, 38, 78, 0.3); /*그림자*/
     font-size: 16px;
@@ -68,8 +73,10 @@ th, td {
     position: relative;
     width: 100%;
     top: 0;
+    /* z-index: 0; */
 }
 
+HEAD
 #infoDiv1 {
     display: flex;
     align-items: center;
@@ -101,4 +108,13 @@ th, td {
     font-family: "Times New Roman", serif;
     font-size: 1.5vw;
     line-height: 1.0;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: #e9e9e9;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
 }
