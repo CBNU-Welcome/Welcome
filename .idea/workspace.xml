@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[ADD] (#6) - Commit before merge with develop branch">
-      <change afterPath="$PROJECT_DIR$/abroad/abroad.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_1_temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_1_temptemp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_2_temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_2qwet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_3_cut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/carousel_bg_3_temp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/cbnu_logo_black.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/cbnu_logo_china.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/cbnu_logo_eng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/cbnu_logo_kor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/img/students.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/abroad/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/main.js" afterDir="false" />
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[REFACTOR] (#6) - Solve merge conflict problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abroad/abroad.html" beforeDir="false" afterPath="$PROJECT_DIR$/abroad/abroad.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +68,7 @@
       <workItem from="1622261069189" duration="1000" />
       <workItem from="1622261270393" duration="2972000" />
       <workItem from="1622278905546" duration="9842000" />
-      <workItem from="1622359813237" duration="1062000" />
+      <workItem from="1622359813237" duration="1824000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] (#4) - Bootstrap 추가">
       <created>1622099964570</created>
@@ -183,6 +162,7 @@
     <MESSAGE value="[ADD] (#6) - Add Information part of CBNU" />
     <MESSAGE value="[ADD] (#6) - Add Google map" />
     <MESSAGE value="[ADD] (#6) - Commit before merge with develop branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (#6) - Commit before merge with develop branch" />
+    <MESSAGE value="[REFACTOR] (#6) - Solve merge conflict problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="[REFACTOR] (#6) - Solve merge conflict problems" />
   </component>
 </project>
