@@ -29,6 +29,8 @@ ul {
 .navbar {
   /* z-index: 9; */
   position: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .visible {
@@ -70,4 +72,33 @@ ul {
   font-size: 20px;
   height: 30px;
   line-height: 30px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu_list {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+}
+.menu_item {
+  margin-left: 200px;
+  padding: 0;
+  color: #fff;
+}
+
+.nav-style {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
 }
