@@ -70,46 +70,6 @@ header {
   margin: 30px auto;
 }
 
-/* .nav {
-  display: inline-block;
-  height: 60px;
-  vertical-align: top;
-} */
-
-/* #nav2 {
-  float: left;
-  height: 60px;
-  margin-left: 5px;
-} */
-/* 
-#nav2 li {
-  float: left;
-  height: 61px;
-}
-
-#nav2 li a {
-  display: block;
-  position: relative;
-  height: 60px;
-  padding: 0 27px 0 13px;
-  font-size: 16px;
-  line-height: 59px;
-  color: #000;
-} */
-
-/* .wrap_head {
-  text-align: center;
-} */
-
-/* ul {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-} */
-
 ul,
 li {
   list-style: none;
