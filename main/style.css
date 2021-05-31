@@ -29,6 +29,8 @@ ul {
 .navbar {
   /* z-index: 9; */
   position: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .visible {
