@@ -1,0 +1,102 @@
+ul {
+  padding-left: 30px;
+}
+
+.blind {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.navbar {
+  /*z-index: 9;*/
+  position: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.linkButton {
+  width: 120px;
+  height: 40px;
+  background-color: #8d264e;
+  color: white;
+  box-shadow: 0 4px 16px rgba(141, 38, 78, 0.3); /*그림자*/
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 0px;
+  font-family: "Times New Roman", serif;
+  transition: 0.5s; /*부드러운 변화 추가*/
+  margin-right: 20px;
+}
+
+.linkButton:hover {
+  background-color: rgba(141, 38, 78, 0.8);
+  cursor: pointer; /*마우스 커서 포인터로 변경*/
+  box-shadow: 0 2px 4px rgba(141, 38, 78, 0.7);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 40px; */
+  transition: top 0.2s ease-in-out;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.visible {
+  display: none;
+}
+
+.pie_container,
+.geo_container {
+  display: flex;
+  justify-content: center;
+}
+
+.geo_container {
+  width: 800px;
+  margin: 30px auto;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu_list {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+}
+.menu_item {
+  margin-left: 200px;
+  padding: 0;
+  color: #fff;
+}
+
+.nav-style {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+}
