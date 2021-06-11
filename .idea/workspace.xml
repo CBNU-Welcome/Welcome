@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[REFACTOR] (#6) - Solve merge conflict problems">
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[CHORE] (#6) - Delete comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,7 +69,8 @@
       <workItem from="1622261069189" duration="1000" />
       <workItem from="1622261270393" duration="2972000" />
       <workItem from="1622278905546" duration="9842000" />
-      <workItem from="1622359813237" duration="1824000" />
+      <workItem from="1622359813237" duration="3130000" />
+      <workItem from="1623372657024" duration="789000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] (#4) - Bootstrap 추가">
       <created>1622099964570</created>
@@ -133,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622360073607</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[CHORE] (#6) - Delete comment">
+      <created>1622361678777</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622361678777</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +172,7 @@
     <MESSAGE value="[ADD] (#6) - Add Google map" />
     <MESSAGE value="[ADD] (#6) - Commit before merge with develop branch" />
     <MESSAGE value="[REFACTOR] (#6) - Solve merge conflict problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="[REFACTOR] (#6) - Solve merge conflict problems" />
+    <MESSAGE value="[CHORE] (#6) - Delete comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="[CHORE] (#6) - Delete comment" />
   </component>
 </project>
