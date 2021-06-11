@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[ADD] (#4) - Change carousel images">
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[CHORE] (#6) - Delete comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/style.css" afterDir="false" />
@@ -15,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,6 +36,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\realj\Desktop\files\1_university\3-1\1.main\3.OpenSource_Web\3.Project\main\img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/style.css/main/main.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.main.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,7 +63,14 @@
       <workItem from="1621780738753" duration="183000" />
       <workItem from="1621780923900" duration="873000" />
       <workItem from="1622098218851" duration="16533000" />
-      <workItem from="1622123296645" duration="3689000" />
+      <workItem from="1622123296645" duration="5100000" />
+      <workItem from="1622186885749" duration="24000" />
+      <workItem from="1622209347795" duration="1452000" />
+      <workItem from="1622261069189" duration="1000" />
+      <workItem from="1622261270393" duration="2972000" />
+      <workItem from="1622278905546" duration="9842000" />
+      <workItem from="1622359813237" duration="3130000" />
+      <workItem from="1623372657024" duration="789000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] (#4) - Bootstrap 추가">
       <created>1622099964570</created>
@@ -91,7 +114,35 @@
       <option name="project" value="LOCAL" />
       <updated>1622123783563</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[ADD] (#4) - Align Div and add div frames">
+      <created>1622127058324</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622127058324</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[ADD] (#6) - Add Information part of CBNU">
+      <created>1622293113092</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622293113093</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[ADD] (#6) - Commit before merge with develop branch">
+      <created>1622360073607</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622360073607</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[CHORE] (#6) - Delete comment">
+      <created>1622361678777</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622361678777</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +167,12 @@
     <MESSAGE value="[ADD] (#4) - Save codes when it's possible to put sth under carousel" />
     <MESSAGE value="[ADD] (#4) - Change menu button design" />
     <MESSAGE value="[ADD] (#4) - Change carousel images" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (#4) - Change carousel images" />
+    <MESSAGE value="[ADD] (#4) - Align Div and add div frames" />
+    <MESSAGE value="[ADD] (#6) - Add Information part of CBNU" />
+    <MESSAGE value="[ADD] (#6) - Add Google map" />
+    <MESSAGE value="[ADD] (#6) - Commit before merge with develop branch" />
+    <MESSAGE value="[REFACTOR] (#6) - Solve merge conflict problems" />
+    <MESSAGE value="[CHORE] (#6) - Delete comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="[CHORE] (#6) - Delete comment" />
   </component>
 </project>
