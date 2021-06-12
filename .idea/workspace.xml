@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[FEAT] (#6) - Add image hover feature">
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[DEL] (#6) - Remove emergency div">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623521138129</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[DEL] (#6) - Remove emergency div">
+      <created>1623521183268</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1623521183268</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +220,7 @@
     <MESSAGE value="[ADD] (#6) - Add bus time informations at each gate" />
     <MESSAGE value="[ADD] (#6) - Change design of bus infomation buttons" />
     <MESSAGE value="[FEAT] (#6) - Add image hover feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FEAT] (#6) - Add image hover feature" />
+    <MESSAGE value="[DEL] (#6) - Remove emergency div" />
+    <option name="LAST_COMMIT_MESSAGE" value="[DEL] (#6) - Remove emergency div" />
   </component>
 </project>
