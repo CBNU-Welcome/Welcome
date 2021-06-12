@@ -9,6 +9,10 @@ ul {
     padding-left: 30px;
 }
 
+body {
+    font-family: "Times New Roman", serif;
+}
+
 .carousel-inner img {
     height: 100vh;
     width: 100%;
@@ -27,10 +31,10 @@ ul {
 }
 
 .navbar {
-  /* z-index: 9; */
-  position: fixed;
-  padding-top: 0;
-  padding-bottom: 0;
+    /* z-index: 9; */
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .visible {
@@ -86,12 +90,18 @@ th, td {
 #infoDiv2 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #infoDiv3 {
     display: flex;
     align-items: center;
 }
+
+/*#tempDiv{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
 #infoDiv1Text {
     font-family: "Times New Roman", serif;
@@ -120,31 +130,116 @@ th, td {
     line-height: 30px;
 }
 
+#wayToCBNUDiv {
+    align-items: center;
+}
+
+.infoImage{
+    overflow: hidden;
+
+}
+
+.infoImage img{
+    background-size: 100%;
+    background-position: center;
+    transition: 0.45s ease-in-out;
+}
+
+.infoImage:hover img{
+    transform: scale(1.2);
+}
+
+.btn-1 {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: #815854;
+    background-color: #F9EBDE;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #815854;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.btn-1:hover {
+    box-shadow: inset 300px 0 0 0 #815854;
+    cursor: pointer;
+    color: #F9EBDE;
+}
+
+
 ul,
 li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .menu_list {
-  display: flex;
-  width: 1000px;
-  justify-content: center;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
 }
+
 .menu_item {
-  margin-left: 200px;
-  padding: 0;
-  color: #fff;
+    margin-left: 200px;
+    padding: 0;
+    color: #fff;
 }
 
 .nav-style {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: sans-serif;
+}
+
+.container span{
+    display: block;
+    text-transform: uppercase;
+}
+
+.text1{
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: transparent;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2{
+    font-size: 30px;
+    color: black;
+    animation : change 2.6s step-end both;
+}
+
+@keyframes change {
+    from {color:transparent}
+    to  {color: black}
+}
+
+@keyframes text{
+    0%{
+        color:black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
 }
