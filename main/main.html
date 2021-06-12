@@ -141,11 +141,11 @@
         </div>
         <div class="col-sm-6">
             <p id="tempString"> Bus stop Near CBNU </p>
-            <button class="btn-1" id="busBtn710">710</button>
-            <button class="btn-1">중문</button>
+            <button class="btn-1" id="front">Front Gate</button>
+            <button class="btn-1" id="middle">Middel Gate</button>
             <br>
-            <button class="btn-1">서문</button>
-            <button class="btn-1">후문</button>
+            <button class="btn-1" id="west">West Gate</button>
+            <button class="btn-1" id="back">Back Gate</button>
         </div>
     </div>
 </div>
@@ -162,7 +162,8 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcvWlh4WgVHdfJOQbg0WvHSYqgfs-LVG8&callback=initMap&region=kr"
             async defer></script>
     <script>
-        var map;
+        let map;
+        let markers = [];
 
         function initMap() {
             var mapCanvas = document.getElementById("wayMapDiv");
@@ -171,21 +172,59 @@
             map = new google.maps.Map(mapCanvas, mapOptions);
 
 
-            google.maps.event.addDomListener(document.getElementById('busBtn710'), 'click', function (evt) {
-                setBusStopMarker(710);
+            google.maps.event.addDomListener(document.getElementById('front'), 'click', function (evt) {
+                setBusStopMarker("front");
+            });
+            google.maps.event.addDomListener(document.getElementById('middle'), 'click', function (evt) {
+                setBusStopMarker("middle");
+            });
+            google.maps.event.addDomListener(document.getElementById('west'), 'click', function (evt) {
+                setBusStopMarker("west");
+            });
+            google.maps.event.addDomListener(document.getElementById('back'), 'click', function (evt) {
+                setBusStopMarker("back");
             });
         }
 
-        function setBusStopMarker(busNum) {
-            switch (busNum){
-                case 710:
-                    const cbnu = {lat: 36.62903563682105, lng: 127.45632061146688};
-                    new google.maps.Marker({
-                        position: cbnu,
-                        map: map,
-                    });
+        function setBusStopMarker(loc) {
+            deleteMarkers();
+            switch (loc) {
+                case "front":
+                    addMarker(36.6323038633615, 127.4527244256218);
+                    addMarker(36.632067662678224, 127.45223047993385);
+                    break;
+                case "middle":
+                    addMarker(36.633184548391675, 127.4606550985035);
+                    addMarker(36.63357358294582, 127.46069316767623);
+                    addMarker(36.63491035659281, 127.45940981345144);
+                    break;
+                case "west":
+                    addMarker(36.62544548789886, 127.44972695581855);
+                    addMarker(36.62493918975336, 127.44991166638248);
+                    break;
+                case "back":
+                    addMarker(36.62422264219441, 127.4635530069435);
+                    addMarker(36.62556259542006, 127.4635953569959);
+                    addMarker(36.62419193584869, 127.46444502562547);
+                    addMarker(36.62395246703185, 127.4642091644376);
                     break;
             }
+        }
+
+        function addMarker(lat, lng) {
+            const markerLatLng = {lat: lat, lng: lng};
+            const marker = new google.maps.Marker({
+                position: markerLatLng,
+                map: map,
+            });
+            markers.push(marker);
+        }
+
+        function deleteMarkers() {
+            for (let i = 0; i < markers.length; i++) {
+                markers[i].setMap(null);
+            }
+            markers = [];
         }
     </script>
 
