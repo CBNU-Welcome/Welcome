@@ -107,3 +107,17 @@ a {
   background-color: #fffede;
   padding-bottom: 50px;
 }
+
+.infoImage {
+  overflow: hidden;
+}
+
+.infoImage img {
+  background-size: 100%;
+  background-position: center;
+  transition: 0.45s ease-in-out;
+}
+
+.infoImage:hover img {
+  transform: scale(1.11);
+}
