@@ -4,7 +4,7 @@ function myMap(){
     var myCenter = new google.maps.LatLng(36.62903526993053, 127.45630791115278);
     var mapOptions = {
         center: myCenter,
-        zoom:13
+        zoom:15
     };
     map = new google.maps.Map(mapCanvas, mapOptions);
 
@@ -13,27 +13,32 @@ function myMap(){
     var t3 = document.getElementById("buttonBack");
     var t4 = document.getElementById("buttonWest");
     var t5 = document.getElementById("closeOffcanvas");
+    var t6 = document.getElementById("buttonWide");
 
     t1.addEventListener('click', function(event){
         map.setCenter(new google.maps.LatLng(36.633619808613375, 127.46043918416818));
-        map.setZoom(16);
+        map.setZoom(18);
         });
 
     t2.addEventListener('click', function(event){
         map.setCenter(new google.maps.LatLng(36.63202593139542, 127.45219008231695));
-        map.setZoom(16);  
+        map.setZoom(18);  
     });
 
     t3.addEventListener('click', function(event){
         map.setCenter(new google.maps.LatLng(36.631124881824896, 127.46162208231705));
-        map.setZoom(16);  
+        map.setZoom(18);  
     });
 
     t4.addEventListener('click', function(event){
         map.setCenter(new google.maps.LatLng(36.62667852694975, 127.45175753126644));
-        map.setZoom(16);  
+        map.setZoom(18);  
     });
 
+    t6.addEventListener('click', function(event){
+        map.setCenter(new google.maps.LatLng(36.62903526993053, 127.45630791115278));        
+        map.setZoom(15);
+    })
     t5.addEventListener('click', function(event){
         const offCanvasElement = document.querySelector("#offcanvasExample");
         offCanvasElement.style.visibility= "hidden"; 
