@@ -13,25 +13,26 @@
 <!--Navigation-->
 <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="margin-left: 30px;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../main/main.html"><img src="img/cbnu_logo_eng.png" alt="cbnu_log_eng" class=""
-            height="80" width="301"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="menu_list">
-            <li class="menu_item">
-              <a href="../main/main.html" class="nav-style"> Home </a>
-            </li>
-            <li class="menu_item">
-              <a href="../abroad/abroad.html" class="nav-style"> Information </a>
-            </li>
-            <li class="menu_item">
-              <a href="../restaurant/restaurant.html" class="nav-style"> Restaurant </a>
-            </li>
-          </ul>
-        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../main/main.html"><img src="img/cbnu_logo_eng.png" alt="cbnu_log_eng"
+                                                                  class=""
+                                                                  height="80" width="301"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="menu_list">
+                    <li class="menu_item">
+                        <a href="../main/main.html" class="nav-style"> Home </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="../abroad/abroad.html" class="nav-style"> Information </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="../restaurant/restaurant.html" class="nav-style"> Restaurant </a>
+                    </li>
+                </ul>
+            </div>
     </nav>
 </header>
 <div role="main">
@@ -139,7 +140,12 @@
             <div id="wayMapDiv" style="width: 70vh; height: 50vh;margin-left: auto;margin-right: 0px;"></div>
         </div>
         <div class="col-sm-6">
-            <p> hello world</p>
+            <p id="tempString"> Bus stop Near CBNU </p>
+            <button class="btn-1" id="busBtn710">710</button>
+            <button class="btn-1">중문</button>
+            <br>
+            <button class="btn-1">서문</button>
+            <button class="btn-1">후문</button>
         </div>
     </div>
 </div>
@@ -156,11 +162,30 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcvWlh4WgVHdfJOQbg0WvHSYqgfs-LVG8&callback=initMap&region=kr"
             async defer></script>
     <script>
+        var map;
+
         function initMap() {
             var mapCanvas = document.getElementById("wayMapDiv");
-            var centerLoc = new google.maps.LatLng(36.62904387998785, 127.45628645377191)
-            var mapOptions = {center: centerLoc, zoom: 15}
-            new google.maps.Map(mapCanvas, mapOptions)
+            var centerLoc = new google.maps.LatLng(36.62904387998785, 127.45628645377191);
+            var mapOptions = {center: centerLoc, zoom: 15};
+            map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+            google.maps.event.addDomListener(document.getElementById('busBtn710'), 'click', function (evt) {
+                setBusStopMarker(710);
+            });
+        }
+
+        function setBusStopMarker(busNum) {
+            switch (busNum){
+                case 710:
+                    const cbnu = {lat: 36.62903563682105, lng: 127.45632061146688};
+                    new google.maps.Marker({
+                        position: cbnu,
+                        map: map,
+                    });
+                    break;
+            }
         }
     </script>
 
