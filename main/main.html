@@ -78,7 +78,7 @@
     </div>
     <div class="row" id="infoDiv2">
         <div class="col-sm-6" style="text-align: right">
-            <img src="img/infoimg1.jpg" width="600vw" style="margin-top: 15px; margin-bottom: 15px;"/>
+            <img id="infoImage1" src="img/infoimg1.jpg" width="600vw" style="margin-top: 15px; margin-bottom: 15px;"/>
         </div>
         <div id="infoDiv2Text" class="col-sm-6" style="text-align: left;">
             <p style="font-size: 2vw; line-height: 1.5"><b>Get closer to your dream</b></p>
@@ -135,18 +135,20 @@
 <div id="emergencyDiv">
     <p>Div for Emergency Things</p>
 </div>
-<div id="wayToCBNUDiv">
+<div id="wayToCBNUDiv" style="background-color: beige; padding-top: 30px; padding-bottom: 30px;">
     <div class="row">
         <div class="col-sm-6">
             <div id="wayMapDiv" style="width: 70vh; height: 50vh;margin-left: auto;margin-right: 0px;"></div>
         </div>
         <div class="col-sm-6">
-            <p id="tempString"> Bus stop Near CBNU </p>
-            <button class="btn-1" id="front">Front Gate</button>
-            <button class="btn-1" id="middle">Middel Gate</button>
-            <br>
-            <button class="btn-1" id="west">West Gate</button>
-            <button class="btn-1" id="back">Back Gate</button>
+            <div id="tempDiv" style="margin-top: 7vh">
+                <p id="tempString" style="font-size: 2vw; line-height: 1.5;"><b>Bus stop Near CBNU </b></p>
+                <button class="btn-1" id="front">Front Gate</button>
+                <button class="btn-1" id="middle">Middel Gate</button>
+                <br>
+                <button class="btn-1" id="west">West Gate</button>
+                <button class="btn-1" id="back">Back Gate</button>
+            </div>
         </div>
     </div>
 </div>
@@ -318,24 +320,21 @@
                     markers[0].addListener("click", () => {
                         infowindow.open(map, markers[0])
                     })
-                }
-                else if(pos0 == 2){
+                } else if (pos0 == 2) {
                     const infowindow = new google.maps.InfoWindow({
                         content: contentStrings[2],
                     });
                     markers[0].addListener("click", () => {
                         infowindow.open(map, markers[0])
                     })
-                }
-                else if(pos0 == 5){
+                } else if (pos0 == 5) {
                     const infowindow = new google.maps.InfoWindow({
                         content: contentStrings[5],
                     });
                     markers[0].addListener("click", () => {
                         infowindow.open(map, markers[0])
                     })
-                }
-                else if(pos0 == 7){
+                } else if (pos0 == 7) {
                     const infowindow = new google.maps.InfoWindow({
                         content: contentStrings[7],
                     });
@@ -353,24 +352,21 @@
                     markers[1].addListener("click", () => {
                         infowindow0.open(map, markers[1])
                     });
-                }
-                else if(pos1 == 3){
+                } else if (pos1 == 3) {
                     const infowindow = new google.maps.InfoWindow({
                         content: contentStrings[3],
                     });
                     markers[1].addListener("click", () => {
                         infowindow.open(map, markers[1])
                     })
-                }
-                else if(pos1 == 6){
+                } else if (pos1 == 6) {
                     const infowindow = new google.maps.InfoWindow({
                         content: contentStrings[6],
                     });
                     markers[1].addListener("click", () => {
                         infowindow.open(map, markers[1])
                     })
-                }
-                else if(pos1 == 8){
+                } else if (pos1 == 8) {
                     const infowindow = new google.maps.InfoWindow({
                         content: contentStrings[8],
                     });
@@ -388,16 +384,14 @@
                     markers[2].addListener("click", () => {
                         infowindow0.open(map, markers[2])
                     });
-                }
-                else if (pos2 == 4) {
+                } else if (pos2 == 4) {
                     const infowindow0 = new google.maps.InfoWindow({
                         content: contentStrings[4],
                     });
                     markers[2].addListener("click", () => {
                         infowindow0.open(map, markers[2])
                     });
-                }
-                else if (pos2 == 9) {
+                } else if (pos2 == 9) {
                     const infowindow0 = new google.maps.InfoWindow({
                         content: contentStrings[9],
                     });
