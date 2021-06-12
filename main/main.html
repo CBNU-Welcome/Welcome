@@ -315,13 +315,17 @@
                         content: contentStrings[0],
                     });
                     markers[0].addListener("click", () => {
-                        infowindow.open(map, markers[0])
-                    })
+                        // map.setZoom(16);
+                        // map.setCenter(markers[0].getPosition());
+                        smoothZoom(0)
+                        infowindow.open(map, markers[0]);
+                    });
                 } else if (pos0 == 2) {
                     const infowindow = new google.maps.InfoWindow({
                         content: contentStrings[2],
                     });
                     markers[0].addListener("click", () => {
+                        smoothZoom(0)
                         infowindow.open(map, markers[0])
                     })
                 } else if (pos0 == 5) {
@@ -329,6 +333,7 @@
                         content: contentStrings[5],
                     });
                     markers[0].addListener("click", () => {
+                        smoothZoom(0)
                         infowindow.open(map, markers[0])
                     })
                 } else if (pos0 == 7) {
@@ -336,6 +341,7 @@
                         content: contentStrings[7],
                     });
                     markers[0].addListener("click", () => {
+                        smoothZoom(0)
                         infowindow.open(map, markers[0])
                     })
                 }
@@ -347,6 +353,7 @@
                         content: contentStrings[1],
                     });
                     markers[1].addListener("click", () => {
+                        smoothZoom(1)
                         infowindow0.open(map, markers[1])
                     });
                 } else if (pos1 == 3) {
@@ -354,6 +361,7 @@
                         content: contentStrings[3],
                     });
                     markers[1].addListener("click", () => {
+                        smoothZoom(1)
                         infowindow.open(map, markers[1])
                     })
                 } else if (pos1 == 6) {
@@ -361,6 +369,7 @@
                         content: contentStrings[6],
                     });
                     markers[1].addListener("click", () => {
+                        smoothZoom(1)
                         infowindow.open(map, markers[1])
                     })
                 } else if (pos1 == 8) {
@@ -368,6 +377,7 @@
                         content: contentStrings[8],
                     });
                     markers[1].addListener("click", () => {
+                        smoothZoom(1)
                         infowindow.open(map, markers[1])
                     })
                 }
@@ -379,6 +389,7 @@
                         content: contentStrings[1],
                     });
                     markers[2].addListener("click", () => {
+                        smoothZoom(2)
                         infowindow0.open(map, markers[2])
                     });
                 } else if (pos2 == 4) {
@@ -386,6 +397,7 @@
                         content: contentStrings[4],
                     });
                     markers[2].addListener("click", () => {
+                        smoothZoom(2)
                         infowindow0.open(map, markers[2])
                     });
                 } else if (pos2 == 9) {
@@ -393,6 +405,7 @@
                         content: contentStrings[9],
                     });
                     markers[2].addListener("click", () => {
+                        smoothZoom(2)
                         infowindow0.open(map, markers[2])
                     });
                 }
@@ -404,6 +417,7 @@
                         content: contentStrings[1],
                     });
                     markers[3].addListener("click", () => {
+                        smoothZoom(3)
                         infowindow0.open(map, markers[3])
                     });
                 }
@@ -412,11 +426,18 @@
                         content: contentStrings[10],
                     });
                     markers[3].addListener("click", () => {
+                        smoothZoom(3)
                         infowindow0.open(map, markers[3])
                     });
                 }
             }
         }
+
+        function smoothZoom(num){
+            map.setZoom(16);
+            map.setCenter(markers[num].getPosition());
+        }
+
 
         function addMarker(lat, lng) {
             const markerLatLng = {lat: lat, lng: lng};
