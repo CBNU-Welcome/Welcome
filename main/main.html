@@ -48,7 +48,7 @@
             <div class="carousel-item active" data-bs-interval="5000">
                 <img src="img/carousel_bg_1.jpg">
                 <div class="carousel-caption container" style="margin-right: 900px; width: 700px; margin-top: 50px;">
-<!--                    <h1 class="display-2">Welcome To<br>CHUNGBUK National University</h1>-->
+                    <!--                    <h1 class="display-2">Welcome To<br>CHUNGBUK National University</h1>-->
                     <span class="text1">Welcome To</span>
                     <span class="text2">Chungbuk National University</span>
                 </div>
@@ -175,15 +175,19 @@
 
             google.maps.event.addDomListener(document.getElementById('front'), 'click', function (evt) {
                 setBusStopMarker("front");
+                smoothZoom(11);
             });
             google.maps.event.addDomListener(document.getElementById('middle'), 'click', function (evt) {
                 setBusStopMarker("middle");
+                smoothZoom(12);
             });
             google.maps.event.addDomListener(document.getElementById('west'), 'click', function (evt) {
                 setBusStopMarker("west");
+                smoothZoom(13);
             });
             google.maps.event.addDomListener(document.getElementById('back'), 'click', function (evt) {
                 setBusStopMarker("back");
+                smoothZoom(14);
             });
         }
 
@@ -435,9 +439,24 @@
             }
         }
 
-        function smoothZoom(num){
-            map.setZoom(16);
-            map.setCenter(markers[num].getPosition());
+        function smoothZoom(num) {
+            if (num == 11) { // 정문
+                map.setZoom(16);
+                map.setCenter({lat: 36.632593570811615, lng: 127.45298188113111});
+            } else if (num == 12) { // 중문
+                map.setZoom(16);
+                map.setCenter({lat: 36.63383227446543, lng: 127.46017496421278});
+            } else if (num == 13) { // 서문
+                map.setZoom(16);
+                map.setCenter({lat: 36.62612130015395, lng: 127.45235665681041});
+            } else if (num == 14) { // 후문
+                map.setZoom(16);
+                map.setCenter({lat: 36.6245692753675, lng: 127.46379517859513});
+            } else {
+                map.setZoom(19);
+                map.setCenter(markers[num].getPosition());
+            }
+
         }
 
 
