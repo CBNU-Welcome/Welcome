@@ -12,6 +12,7 @@ function myMap(){
     var t2 = document.getElementById("buttonFront");
     var t3 = document.getElementById("buttonBack");
     var t4 = document.getElementById("buttonWest");
+    var t5 = document.getElementById("closeOffcanvas");
 
     t1.addEventListener('click', function(event){
         map.setCenter(new google.maps.LatLng(36.633619808613375, 127.46043918416818));
@@ -33,6 +34,12 @@ function myMap(){
         map.setZoom(16);  
     });
 
+    t5.addEventListener('click', function(event){
+        const offCanvasElement = document.querySelector("#offcanvasExample");
+        offCanvasElement.style.visibility= "hidden"; 
+        offCanvasElement.classList.remove("show"); 
+    })
+
     for(let i =0; i< 4; i++) 
         for(let j =0; j<2; j++){
         const marker = new google.maps.Marker({
@@ -42,10 +49,19 @@ function myMap(){
         google.maps.event.addListener(marker, 'click', function(){
             map.setCenter(marker.getPosition());
             map.setZoom(20);
-            let infoWindow = new google.maps.InfoWindow({
-                content : `${everyRestInfo[i][j].name}`
-            });
-            infoWindow.open(map, marker);
+            const offCanvasElement = document.querySelector("#offcanvasExample");
+            const state = offCanvasElement.style.visibility; 
+            if (state === "hidden") { 
+            let element = document.getElementById("storeName");
+            element.innerText = `${everyRestInfo[i][j].name}`
+            offCanvasElement.style.visibility= "visible"; 
+            offCanvasElement.classList.add("show"); 
+            }
+            else { 
+            console.log(state);
+            offCanvasElement.style.visibility="hidden"; 
+            offCanvasElement.classList.remove("show"); 
+            }
         })
     }
 }
