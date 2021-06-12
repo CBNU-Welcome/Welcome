@@ -90,6 +90,7 @@ th, td {
 #infoDiv2 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #infoDiv3 {
@@ -133,8 +134,19 @@ th, td {
     align-items: center;
 }
 
-#infoImage1:hover {
+.infoImage{
+    overflow: hidden;
 
+}
+
+.infoImage img{
+    background-size: 100%;
+    background-position: center;
+    transition: 0.45s ease-in-out;
+}
+
+.infoImage:hover img{
+    transform: scale(1.2);
 }
 
 .btn-1 {
