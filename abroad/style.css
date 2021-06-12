@@ -159,6 +159,7 @@ a {
   color: black;
   background-color: transparent;
   position: relative;
+  left: 100%;
   animation: text 3s 1;
 }
 
@@ -166,6 +167,8 @@ a {
   font-size: 30px;
   color: black;
   animation: change 2.6s step-end both;
+  position: relative;
+  left: 100%;
 }
 
 @keyframes change {
