@@ -1,11 +1,159 @@
-<!--TODO : 이동우 / 밥집 페이지-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Exercise3</title>
+  </head>
+  <body>
+    <div id = "map" style = "width:800px; height:500px"></div>
+    <button type="button" class="btn-primary" id="buttonMiddle">충북대 중문</button>
+    <button type="button" class="btn-success" id="buttonFront">충북대 정문</button>
+    <button type="button" class="btn-danger" id="buttonBack">충북대 후문</button>
+    <button type="button" class="btn-warning" id="buttonWest">충북대 서문</button>
 
-</body>
+
+    <button class="btn btn-primary" type="button" data-bs-toogle="offcanvas" data-bs-target="#offcanvasExample" 
+    aria-controls="offcanvasExample">Button with data-bs-target</button>
+      
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+      </div>
+    </div>  
+  
+    <script type="text/javascript">
+      
+      function restInfo(name, locationX, locationY, topic, url){
+            this.name = name;
+            this.locationX = locationX;
+            this.locationY = locationY;
+            this.topic = topic;
+            this.url = url;
+        }
+
+        function MiddleGate(){
+            let middleRest = new Array();
+            middleRest.push(new restInfo("Brito in", 36.6325830447289, 127.45881261542357  ,"brito", "u1.com"));
+            middleRest.push(new restInfo("Nepal Restaurant", 36.63362117198181, 127.46014695376111, "nepal", "u2.com"));
+            return middleRest;
+        }
+
+        function FrontGate(){
+            let frontRest = new Array();
+            frontRest.push(new restInfo("E gane", 36.63205011468775, 127.45168960100418, "zean", "u3.com"));
+            frontRest.push(new restInfo("Arisan", 36.63343123074221, 127.44982898804105, "chinese", "u4.com"));
+            return frontRest;
+        }
+
+        function BackGate(){
+            let backRest = new Array();
+            backRest.push(new restInfo("GalBi", 36.620944114376236, 127.4517052149377, "Galbi","u5.com"));
+            backRest.push(new restInfo("Normal Guksu", 36.62621415673392, 127.45208376815307, "noodle","u6.com"));
+            return backRest;
+        }
+
+        function WestGate(){
+            let westRest = new Array();
+            westRest.push(new restInfo("Korean News", 36.62614817511974, 127.46911145708717, "alchol", "u7.com"));
+            westRest.push(new restInfo("Gambare Gambaro", 36.63042361561481, 127.4622490587106, "Japanese", "u8.com"));
+            return westRest;
+        }
+
+        function AllGate(){
+            const everyInfo = new Array();
+            const middleRest = MiddleGate();
+            const frontRest = FrontGate();
+            const backRest = BackGate();
+            const westRest = WestGate();
+            everyInfo.push(middleRest);
+            everyInfo.push(frontRest);
+            everyInfo.push(backRest);
+            everyInfo.push(westRest);
+            return everyInfo;
+        }
+
+      function myMap(){
+        const everyRestInfo = AllGate();
+        var mapCanvas = document.getElementById("map");
+        var myCenter = new google.maps.LatLng(36.62903526993053, 127.45630791115278);
+        var mapOptions = {
+            center: myCenter,
+            zoom:13
+        };
+        map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var t1 = document.getElementById("buttonMiddle");
+        var t2 = document.getElementById("buttonFront");
+        var t3 = document.getElementById("buttonBack");
+        var t4 = document.getElementById("buttonWest");
+
+        t1.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.633619808613375, 127.46043918416818));
+          map.setZoom(16);
+          });
+
+        t2.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.63202593139542, 127.45219008231695));
+          map.setZoom(16);  
+        });
+
+        t3.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.631124881824896, 127.46162208231705));
+          map.setZoom(16);  
+        });
+
+        t4.addEventListener('click', function(event){
+          map.setCenter(new google.maps.LatLng(36.62667852694975, 127.45175753126644));
+          map.setZoom(16);  
+        });
+
+
+        for(let i =0; i< 4; i++) 
+          for(let j =0; j<2; j++){
+          const marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(everyRestInfo[i][j].locationX, everyRestInfo[i][j].locationY)
+          });
+          google.maps.event.addListener(marker, 'click', function(){
+            map.setCenter(marker.getPosition());
+            map.setZoom(20);
+          })
+        }
+
+
+        // google.maps.event.addListener(marker, 'click', function(event){
+        //   document.write(`
+        //   <div class="container">
+        //     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        //     <div class="offcanvas-header">
+        //     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        //     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        //     </div>
+        //     <div class="offcanvas-body">
+        //     <div>
+        //     Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        //     </div>
+        //    </div>
+        //   </div>
+        //   </div>`);
+        // });
+        }
+
+    </script>
+    <script type="module"> 
+    
+    import {secretKey} from './secretKey.js';
+      const API_KEY = secretKey();
+      const script = document.createElement('script');
+      script.src = ` https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=myMap`;
+      document.body.append(script);
+
+    </script>
+  </body>
 </html>
