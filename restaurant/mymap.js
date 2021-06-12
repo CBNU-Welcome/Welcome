@@ -40,8 +40,12 @@ function myMap(){
         position: new google.maps.LatLng(everyRestInfo[i][j].locationX, everyRestInfo[i][j].locationY)
         });
         google.maps.event.addListener(marker, 'click', function(){
-        map.setCenter(marker.getPosition());
-        map.setZoom(20);
+            map.setCenter(marker.getPosition());
+            map.setZoom(20);
+            let infoWindow = new google.maps.InfoWindow({
+                content : `${everyRestInfo[i][j].name}`
+            });
+            infoWindow.open(map, marker);
         })
     }
 }
