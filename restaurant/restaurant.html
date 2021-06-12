@@ -15,6 +15,7 @@
     <button type="button" id="buttonFront">충북대 정문</button>
     <button type="button" id="buttonBack">충북대 후문</button>
     <button type="button" id="buttonWest">충북대 서문</button>
+
     <script type="text/javascript">
 
       function myMap(){
@@ -25,10 +26,14 @@
             zoom:15
         };
         map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+
         var t1 = document.getElementById("buttonMiddle");
         var t2 = document.getElementById("buttonFront");
         var t3 = document.getElementById("buttonBack");
         var t4 = document.getElementById("buttonWest");
+
 
         t1.addEventListener('click', function(event){
           map.setCenter(new google.maps.LatLng(36.633619808613375, 127.46043918416818));
@@ -45,9 +50,39 @@
         t4.addEventListener('click', function(event){
           map.setCenter(new google.maps.LatLng(36.62667852694975, 127.45175753126644));
           });
-         }
+
+          var marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(36.633619808613375, 127.46043918416818)
+          });
+
+        google.maps.event.addListener(marker, 'click', function(event){
+          document.write(`
+          <div class="container">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+           </div>
+          </div>
+          </div>`);
+        });
+        }
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4qUetyog_BW_P7-o41_M5QWpKFSVWQ2E&callback=myMap"></script>
+    <script type="module"> 
+    
+    import {secretKey} from './secretKey.js';
+      const API_KEY = secretKey();
+      const script = document.createElement('script');
+      script.src = ` https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=myMap`;
+      document.body.append(script);
+
+    </script>
   </body>
 </html>
