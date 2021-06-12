@@ -1,101 +1,102 @@
 header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: top 0.2s ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.2s ease-in-out;
 }
 
 ul {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 body {
-    font-family: "Times New Roman", serif;
+  font-family: "Times New Roman", serif;
 }
 
 .carousel-inner img {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .carousel-caption {
-    /*position: absolute;*/
-    top: 20%;
-    transform: translateY(-20%);
+  /*position: absolute;*/
+  top: 20%;
+  transform: translateY(-20%);
 }
 
 .carousel-caption h1 {
-    font-size: 300%;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
+  font-size: 300%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
 }
 
 .navbar {
-    /* z-index: 9; */
-    position: fixed;
-    padding-top: 0;
-    padding-bottom: 0;
+  /* z-index: 9; */
+  position: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .visible {
-    display: none;
+  display: none;
 }
 
 .linkButton {
-    width: 120px;
-    height: 40px;
-    background-color: #8d264e;
-    color: white;
-    box-shadow: 0 4px 16px rgba(141, 38, 78, 0.3); /*그림자*/
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 20px;
-    border: 0px;
-    font-family: "Times New Roman", serif;
-    transition: 0.5s; /*부드러운 변화 추가*/
-    margin-right: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #8d264e;
+  color: white;
+  box-shadow: 0 4px 16px rgba(141, 38, 78, 0.3); /*그림자*/
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 0px;
+  font-family: "Times New Roman", serif;
+  transition: 0.5s; /*부드러운 변화 추가*/
+  margin-right: 20px;
 }
 
 .linkButton:hover {
-    background-color: rgba(141, 38, 78, 0.8);
-    cursor: pointer; /*마우스 커서 포인터로 변경*/
-    box-shadow: 0 2px 4px rgba(141, 38, 78, 0.7);
+  background-color: rgba(141, 38, 78, 0.8);
+  cursor: pointer; /*마우스 커서 포인터로 변경*/
+  box-shadow: 0 2px 4px rgba(141, 38, 78, 0.7);
 }
 
 table {
-    /*solid-color: crimson;*/
-    border: 1px solid crimson;
-    border-collapse: collapse;
-    border-spacing: 5px;
+  /*solid-color: crimson;*/
+  border: 1px solid crimson;
+  border-collapse: collapse;
+  border-spacing: 5px;
 }
 
-th, td {
-    border: 1px solid crimson;
-    border-collapse: collapse;
-    border-spacing: 5px;
+th,
+td {
+  border: 1px solid crimson;
+  border-collapse: collapse;
+  border-spacing: 5px;
 }
 
 #slides {
-    position: relative;
-    width: 100%;
-    top: 0;
-    /* z-index: 0; */
+  position: relative;
+  width: 100%;
+  top: 0;
+  /* z-index: 0; */
 }
 
 #infoDiv1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #infoDiv2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #infoDiv3 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /*#tempDiv{*/
@@ -104,142 +105,144 @@ th, td {
 /*}*/
 
 #infoDiv1Text {
-    font-family: "Times New Roman", serif;
-    font-size: 1.5vw;
-    line-height: 1.0;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5vw;
+  line-height: 1;
 }
 
 #infoDiv2Text {
-    font-family: "Times New Roman", serif;
-    font-size: 1.5vw;
-    line-height: 1.0;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5vw;
+  line-height: 1;
 }
 
 #infoDiv3Text {
-    font-family: "Times New Roman", serif;
-    font-size: 1.5vw;
-    line-height: 1.0;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5vw;
+  line-height: 1;
 }
 
 #footer {
-    display: flex;
-    justify-content: center;
-    background-color: #e9e9e9;
-    font-size: 20px;
-    height: 30px;
-    line-height: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
 }
 
 #wayToCBNUDiv {
-    align-items: center;
+  align-items: center;
 }
 
-.infoImage{
-    overflow: hidden;
-
+.infoImage {
+  overflow: hidden;
 }
 
-.infoImage img{
-    background-size: 100%;
-    background-position: center;
-    transition: 0.45s ease-in-out;
+.infoImage img {
+  background-size: 100%;
+  background-position: center;
+  transition: 0.45s ease-in-out;
 }
 
-.infoImage:hover img{
-    transform: scale(1.2);
+.infoImage:hover img {
+  transform: scale(1.2);
 }
 
 .btn-1 {
-    width: 300px;
-    height: 100px;
-    border: none;
-    color: #815854;
-    background-color: #F9EBDE;
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 #815854;
-    transition: ease-out 0.3s;
-    font-size: 2rem;
-    outline: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
+  width: 300px;
+  height: 100px;
+  border: none;
+  color: #815854;
+  background-color: #f9ebde;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #815854;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .btn-1:hover {
-    box-shadow: inset 300px 0 0 0 #815854;
-    cursor: pointer;
-    color: #F9EBDE;
+  box-shadow: inset 300px 0 0 0 #815854;
+  cursor: pointer;
+  color: #f9ebde;
 }
-
 
 ul,
 li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .menu_list {
-    display: flex;
-    width: 1000px;
-    justify-content: center;
+  display: flex;
+  width: 1000px;
+  justify-content: center;
 }
 
 .menu_item {
-    margin-left: 200px;
-    padding: 0;
-    color: #fff;
+  margin-left: 200px;
+  padding: 0;
+  color: #fff;
 }
 
 .nav-style {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
 }
 
-.container span{
-    display: block;
-    text-transform: uppercase;
+.container span {
+  display: block;
+  text-transform: uppercase;
 }
 
-.text1{
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: 8px;
-    margin-bottom: 20px;
-    color: black;
-    background-color: transparent;
-    position: relative;
-    animation: text 3s 1;
+.text1 {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  color: black;
+  background-color: transparent;
+  position: relative;
+  animation: text 3s 1;
 }
 
-.text2{
-    font-size: 30px;
-    color: black;
-    animation : change 2.6s step-end both;
+.text2 {
+  font-size: 30px;
+  color: black;
+  animation: change 2.6s step-end both;
 }
 
 @keyframes change {
-    from {color:transparent}
-    to  {color: black}
+  from {
+    color: transparent;
+  }
+  to {
+    color: black;
+  }
 }
 
-@keyframes text{
-    0%{
-        color:black;
-        margin-bottom: -40px;
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
 }
