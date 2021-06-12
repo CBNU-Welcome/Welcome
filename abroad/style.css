@@ -1,3 +1,7 @@
+.bg_main {
+  background-color: #fffff3;
+}
+
 ul {
   padding-left: 30px;
 }
@@ -28,8 +32,9 @@ header {
 }
 
 #footer {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  float: left;
   background-color: #e9e9e9;
   font-size: 20px;
   height: 30px;
@@ -40,7 +45,25 @@ header {
   display: none;
 }
 
-.pie_container,
+.status1 {
+  margin: 30px;
+  margin-left: 17%;
+  float: left;
+  width: 550px;
+  height: 550px;
+}
+
+.status2 {
+  margin: 40px 8.5%;
+  width: 1500px;
+  height: 200px;
+}
+
+.pie_container {
+  float: left;
+  margin: 0;
+}
+
 .geo_container {
   display: flex;
   justify-content: center;
@@ -78,4 +101,9 @@ a {
   font-weight: bold;
   color: black;
   font-family: sans-serif;
+}
+
+.container1 {
+  background-color: #fffede;
+  padding-bottom: 50px;
 }
