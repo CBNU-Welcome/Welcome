@@ -1,3 +1,7 @@
+.bg_main {
+  background-color: #fffff3;
+}
+
 ul {
   padding-left: 30px;
 }
@@ -40,7 +44,22 @@ header {
   display: none;
 }
 
-.pie_container,
+/* .wraper1 {
+  text-align: center;
+} */
+
+.status1 {
+  margin: 0 11.5%;
+  float: left;
+  width: 600px;
+  height: 600px;
+}
+
+.pie_container {
+  float: left;
+  margin: 0;
+}
+
 .geo_container {
   display: flex;
   justify-content: center;
