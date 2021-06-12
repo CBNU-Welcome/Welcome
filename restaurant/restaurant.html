@@ -4,9 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" />
     <title>Exercise3</title>
   </head>
   <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="margin-left: 30px">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../main/main.html">
+            <span class="blind">충북대학교 배너이미지</span>
+            <img src="img/cbnu_logo_eng.png" alt="" class="" height="80" width="301" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="menu_list">
+              <li class="menu_item">
+                <a href="../main/main.html" class="nav-style"> Home </a>
+              </li>
+              <li class="menu_item">
+                <a href="../abroad/abroad.html" class="nav-style">
+                  Information
+                </a>
+              </li>
+              <li class="menu_item">
+                <a href="../restaurant/restaurant.html" class="nav-style">
+                  Restaurant
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
     <div id = "map" style = "width:800px; height:500px"></div>
     <button type="button" class="btn-primary" id="buttonMiddle">충북대 중문</button>
     <button type="button" class="btn-success" id="buttonFront">충북대 정문</button>
@@ -155,5 +188,20 @@
       document.body.append(script);
 
     </script>
+
+    <div role="main">
+
+    </div>
+    
+    <footer id="footer">
+      <div>
+        <p>Div for Developer and Other links</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./restaurant.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
