@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[CHORE] (#6) - Modify grammatical error">
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[ADD] (#6) - Add smooth zoom feature in map">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623521231401</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="[ADD] (#6) - Add smooth zoom feature in map">
+      <created>1623521857791</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1623521857791</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +237,7 @@
     <MESSAGE value="[FEAT] (#6) - Add image hover feature" />
     <MESSAGE value="[DEL] (#6) - Remove emergency div" />
     <MESSAGE value="[CHORE] (#6) - Modify grammatical error" />
-    <option name="LAST_COMMIT_MESSAGE" value="[CHORE] (#6) - Modify grammatical error" />
+    <MESSAGE value="[ADD] (#6) - Add smooth zoom feature in map" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (#6) - Add smooth zoom feature in map" />
   </component>
 </project>
