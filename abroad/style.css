@@ -18,27 +18,6 @@ ul {
   padding-bottom: 0;
 }
 
-.linkButton {
-  width: 120px;
-  height: 40px;
-  background-color: #8d264e;
-  color: white;
-  box-shadow: 0 4px 16px rgba(141, 38, 78, 0.3); /*그림자*/
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 20px;
-  border: 0px;
-  font-family: "Times New Roman", serif;
-  transition: 0.5s; /*부드러운 변화 추가*/
-  margin-right: 20px;
-}
-
-.linkButton:hover {
-  background-color: rgba(141, 38, 78, 0.8);
-  cursor: pointer; /*마우스 커서 포인터로 변경*/
-  box-shadow: 0 2px 4px rgba(141, 38, 78, 0.7);
-}
-
 header {
   position: fixed;
   top: 0;
