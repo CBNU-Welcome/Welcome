@@ -46,10 +46,11 @@ header {
 }
 
 .status1 {
-  margin: 0 11.5%;
+  margin: 30px;
+  margin-left: 17%;
   float: left;
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
 }
 
 .status2 {
@@ -100,4 +101,9 @@ a {
   font-weight: bold;
   color: black;
   font-family: sans-serif;
+}
+
+.container1 {
+  background-color: #fffede;
+  padding-bottom: 50px;
 }
