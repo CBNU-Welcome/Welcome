@@ -3,21 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Exercise3</title>
   </head>
   <body>
     <div id = "map" style = "width:800px; height:500px"></div>
-    <button type="button" id="buttonMiddle">충북대 중문</button>
-    <button type="button" id="buttonFront">충북대 정문</button>
-    <button type="button" id="buttonBack">충북대 후문</button>
-    <button type="button" id="buttonWest">충북대 서문</button>
+    <button type="button" class="btn-primary" id="buttonMiddle">충북대 중문</button>
+    <button type="button" class="btn-success" id="buttonFront">충북대 정문</button>
+    <button type="button" class="btn-danger" id="buttonBack">충북대 후문</button>
+    <button type="button" class="btn-warning" id="buttonWest">충북대 서문</button>
 
-    <script type = "module">
-      </script>
+
+    <button class="btn btn-primary" type="button" data-bs-toogle="offcanvas" data-bs-target="#offcanvasExample" 
+    aria-controls="offcanvasExample">Button with data-bs-target</button>
+      
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+      </div>
+    </div>  
+  
     <script type="text/javascript">
       
       function restInfo(name, locationX, locationY, topic, url){
@@ -84,7 +93,6 @@
         var t3 = document.getElementById("buttonBack");
         var t4 = document.getElementById("buttonWest");
 
-
         t1.addEventListener('click', function(event){
           map.setCenter(new google.maps.LatLng(36.633619808613375, 127.46043918416818));
           map.setZoom(16);
@@ -112,7 +120,12 @@
             map: map,
             position: new google.maps.LatLng(everyRestInfo[i][j].locationX, everyRestInfo[i][j].locationY)
           });
+          google.maps.event.addListener(marker, 'click', function(){
+            map.setCenter(marker.getPosition());
+            map.setZoom(20);
+          })
         }
+
 
         // google.maps.event.addListener(marker, 'click', function(event){
         //   document.write(`
