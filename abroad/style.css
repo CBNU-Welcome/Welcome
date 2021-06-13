@@ -16,25 +16,21 @@ ul {
 }
 
 .navbar {
-  /*z-index: 9;*/
   position: fixed;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 header {
-  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 40px; */
   transition: top 0.2s ease-in-out;
 }
 
 #footer {
-  /* display: flex;
-  justify-content: center; */
-  float: left;
+  display: flex;
+  justify-content: center;
   background-color: #e9e9e9;
   font-size: 20px;
   height: 30px;
@@ -54,9 +50,9 @@ header {
 }
 
 .status2 {
-  margin: 40px 8.5%;
-  width: 1500px;
-  height: 200px;
+  margin: 40px 12.5%;
+  width: 1400px;
+  height: 160px;
 }
 
 .pie_container {
@@ -66,12 +62,9 @@ header {
 
 .geo_container {
   display: flex;
-  justify-content: center;
-}
-
-.geo_container {
   width: 800px;
-  margin: 30px auto;
+  margin: 0px 450px;
+  margin-bottom: 30px;
 }
 
 ul,
@@ -105,7 +98,7 @@ a {
 
 .container1 {
   background-color: #fffede;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .infoImage {
@@ -126,7 +119,6 @@ a {
   position: relative;
   width: 100%;
   top: 0;
-  /* z-index: 0; */
 }
 
 .carousel-inner img {
@@ -135,7 +127,6 @@ a {
 }
 
 .carousel-caption {
-  /*position: absolute;*/
   top: 20%;
   transform: translateY(-20%);
 }
@@ -159,38 +150,149 @@ a {
   color: black;
   background-color: transparent;
   position: relative;
-  left: 100%;
-  animation: text 3s 1;
+  left: 95%;
+  -webkit-animation: tracking-in-contract-bck-top 1s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
 }
 
 .text2 {
   font-size: 30px;
   color: black;
-  animation: change 2.6s step-end both;
   position: relative;
-  left: 100%;
+  left: 95%;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes change {
-  from {
-    color: transparent;
-  }
-  to {
-    color: black;
-  }
-}
-
-@keyframes text {
+@-webkit-keyframes focus-in-expand {
   0% {
-    color: black;
-    margin-bottom: -40px;
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
-  30% {
-    letter-spacing: 25px;
-    margin-bottom: -40px;
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
-  85% {
-    letter-spacing: 8px;
-    margin-bottom: -40px;
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.nav-animation {
+  padding-bottom: 1px;
+  color: hsl(222, 25%, 14%);
+  position: relative;
+}
+
+.nav-animation:hover {
+  color: black;
+}
+
+.nav-animation::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(3px);
+  background: hsl(243, 80%, 62%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-animation:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo-animation {
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.logo-animation:hover {
+  transform: scale(1.03);
+}
+
+.logo-animation:active {
+  transform: scale(0.9);
+}
+
+.link-animation {
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.link-animation:hover {
+  transform: scale(1.08);
+}
+
+.link-animation:active {
+  transform: scale(0.9);
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9e9;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 30px 90px;
+  width: 200px;
+  height: 150px;
 }

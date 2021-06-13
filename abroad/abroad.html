@@ -9,7 +9,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <link href="./style.css" rel="stylesheet" />
-  <!--Load the AJAX API-->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <script type="text/javascript" src="piechart.js"></script>
@@ -18,13 +17,12 @@
 </head>
 
 <body class="bg_main">
-  <!--Navigation-->
   <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="margin-left: 30px">
       <div class="container-fluid">
         <a class="navbar-brand" href="../main/main.html">
           <span class="blind">충북대학교 배너이미지</span>
-          <img src="img/cbnu_logo_eng.png" alt="" class="" height="80" width="301" />
+          <img src="img/cbnu_logo_eng.png" alt="" class="logo-animation" height="80" width="301" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
@@ -32,15 +30,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="menu_list">
             <li class="menu_item">
-              <a href="../main/main.html" class="nav-style"> Home </a>
+              <a href="../main/main.html" class="nav-style nav-animation"> Home </a>
             </li>
             <li class="menu_item">
-              <a href="../abroad/abroad.html" class="nav-style">
+              <a href="../abroad/abroad.html" class="nav-style nav-animation">
                 Information
               </a>
             </li>
             <li class="menu_item">
-              <a href="../restaurant/restaurant.html" class="nav-style">
+              <a href="../restaurant/restaurant.html" class="nav-style nav-animation">
                 Restaurant
               </a>
             </li>
@@ -62,9 +60,8 @@
         <div class="carousel-item active" data-bs-interval="5000">
           <img src="img/bg_1.jpg" alt="">
           <div class="carousel-caption container" style="margin-right: 900px; width: 700px; margin-top: 50px;">
-            <!--                    <h1 class="display-2">Welcome To<br>CHUNGBUK National University</h1>-->
-            <span class="text1">Welcome To</span>
-            <span class="text2">Chungbuk National University</span>
+            <span class="text1">Information</span>
+            <span class="text2">For international students in CBNU</span>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="5000">
@@ -83,14 +80,27 @@
     <span class="infoImage"> 
       <img src="img/status1.jpg" alt="" class="status1 img-fluid"> 
     </sapn>
-    <div id="pie_2020" class="pie_container"></div>
+    <div id="pie_2020" class="pie_container mini"></div>
   </div>
 
-  <footer id="footer">
-    <div>
+  <div class="container-fluid container2">
+    <div class="row">
+      <div class="col-sm-4" style="background-color: #FFFEEA;">
+        <a href="https://cia.chungbuk.ac.kr/kor"><img src="img/icon_kor.png" alt="" class="item link-animation"></a>
+      </div>
+      <div class="col-sm-4" style="background-color: #FBFFE0;">
+        <a href="https://cia.chungbuk.ac.kr/edu"><img src="img/icon_eng.png" alt="" class="item link-animation"></a>
+      </div>
+      <div class="col-sm-4" style="background-color: #FFFEE0;">
+        <a href="https://www.chungbuk.ac.kr/intro/index.jsp"><img src="img/icon_cbnu.png" alt="" class="item link-animation"></a>
+      </div>
+    </div>
+  </div>
+
+    <footer id="footer">
       <p>Div for Developer and Other links</p>
     </div>
-  </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="./abroad.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
