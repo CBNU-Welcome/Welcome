@@ -34,7 +34,7 @@
       const options = {
         backgroundColor: '#FFFEDE',
         width: 1000,
-        height: 550,
+        height: 500,
         colorAxis: { colors: ["#5CAB7D", "#44633F"] },
       };
 
