@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[CHORE] (#6) - Restore deleted navbar animation effects">
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[FEAT] Add Footer at abroad and restaurant page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/abroad/abroad.html" beforeDir="false" afterPath="$PROJECT_DIR$/abroad/abroad.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/abroad/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/abroad/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/restaurant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623592277569</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[FEAT] Add Footer at abroad and restaurant page">
+      <created>1623594012379</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1623594012379</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +296,7 @@
     <MESSAGE value="[ADD] (#6) - Add smooth zoom in map" />
     <MESSAGE value="[ADD] (#6) - Change map language from Korean to English" />
     <MESSAGE value="[CHORE] (#6) - Restore deleted navbar animation effects" />
-    <option name="LAST_COMMIT_MESSAGE" value="[CHORE] (#6) - Restore deleted navbar animation effects" />
+    <MESSAGE value="[FEAT] Add Footer at abroad and restaurant page" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FEAT] Add Footer at abroad and restaurant page" />
   </component>
 </project>

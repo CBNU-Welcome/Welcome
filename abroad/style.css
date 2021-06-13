@@ -282,19 +282,18 @@ a {
     background-color: #fff9e9;
 }
 
-
 .footerContainer{
     font-family: 'Poppins', sans-serif;
     max-width: 1170px;
     margin: auto;
 }
 
-.row{
+.footerRow{
     display: flex;
     flex-wrap: wrap;
 }
 
-ul{
+.footer-col ul{
     list-style: none;
 }
 
@@ -375,4 +374,8 @@ ul{
     .footer-col{
         width: 100%;
     }
+}
+
+.item{
+    padding: 40px;
 }
