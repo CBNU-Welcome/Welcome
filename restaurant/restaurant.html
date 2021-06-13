@@ -1,11 +1,97 @@
-<!--TODO : 이동우 / 밥집 페이지-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" />
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="margin-left: 30px">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../main/main.html">
+            <span class="blind">충북대학교 배너이미지</span>
+            <img src="img/cbnu_logo_eng.png" alt="" class="logo-animation" height="80" width="301" />
+          </a>
+          <button class="navbar-toggler" type="button" 
+          data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="menu_list">
+              <li class="menu_item">
+                <a href="../main/main.html" class="nav-style nav-animation"> Home </a>
+              </li>
+              <li class="menu_item">
+                <a href="../abroad/abroad.html" class="nav-style nav-animation">
+                  Information
+                </a>
+              </li>
+              <li class="menu_item">
+                <a href="../restaurant/restaurant.html" class="nav-style nav-animation">
+                  Restaurant
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-</body>
+    <div id = "map" style = "width:100%; height:100vh; margin-top: 90px; margin-bottom: 10px;"></div>
+    <button type="button" class="btn btn-dark btn-lg" id="buttonWide">Wide View</button>
+    <button type="button" class="btn btn-outline-primary" id="buttonMiddle">Middle Gate</button>
+    <button type="button" class="btn btn-outline-success" id="buttonFront">Front Gate</button>
+    <button type="button" class="btn btn-outline-danger" id="buttonBack">Back Gate</button>
+    <button type="button" class="btn btn-outline-warning" id="buttonWest">West Gate</button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" aria-expanded="false">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasExampleLabel">Information</h5>
+        <button type="button" id = "closeOffcanvas"class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <i class ="fas fa-store"> <label class="store-info"> Name</label></i>
+          <p id="storeName"></p><hr>
+          <i class ="fas fa-phone"> <label class="store-info"> Phone Number</label></i>
+          <p id="phone"></p><hr>
+          <i class ="fas fa-hashtag"> <label class="store-info"> Hash Tags</label></i>
+          <p id="hash">#hash #hi</p><hr>
+          <i class ="fas fa-map-marker-alt"> <label class="store-info"> location X</label></i>
+          <label id="locationX">x</label>
+          <i class ="fas fa-map-marker-alt"> <label class="store-info"> location Y</label></i>
+          <label id="locationY">y</label><hr>
+          
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="secretKey.js"></script>
+    <script type="text/javascript">
+      
+      const API_KEY = secretkey;
+      const script = document.createElement('script');
+      script.src = ` https://maps.googleapis.com/maps/api/js?key=${API_KEY}&language=en&callback=myMap`;
+      document.body.append(script);
+
+    </script>
+    <script type="text/javascript" src="items.js"></script>
+    <script type="text/javascript" src="mymap.js"></script>
+    <div role="main">
+
+    </div>
+    
+    <footer id="footer">
+      <div>
+        <p>Div for Developer and Other links</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
 </html>

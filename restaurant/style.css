@@ -1,0 +1,114 @@
+ul {
+  padding-left: 30px;
+}
+
+.blind {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.navbar {
+  /*z-index: 9;*/
+  position: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 40px; */
+  transition: top 0.2s ease-in-out;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.visible {
+  display: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu_list {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+}
+.menu_item {
+  margin-left: 200px;
+  padding: 0;
+  color: #fff;
+}
+
+.nav-style {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+}
+
+.nav-animation {
+  padding-bottom: 1px;
+  color: hsl(222, 25%, 14%);
+  position: relative;
+}
+
+.nav-animation:hover {
+  color: black;
+}
+
+.nav-animation::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(3px);
+  background: hsl(243, 80%, 62%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-animation:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo-animation {
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.logo-animation:hover {
+  transform: scale(1.03);
+}
+
+.logo-animation:active {
+  transform: scale(0.9);
+}
+.store-info {
+  font-size: 20px;
+  font-family: sans-serif;
+}
