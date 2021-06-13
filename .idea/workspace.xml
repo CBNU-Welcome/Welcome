@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[ADD] (#6) - Add animation effect at first carousel view">
-      <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[FEAT] Add Footer at abroad and restaurant page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abroad/abroad.html" beforeDir="false" afterPath="$PROJECT_DIR$/abroad/abroad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abroad/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/abroad/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/6-main-page-tasks" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -54,6 +61,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.main.html" />
+        <item itemvalue="JavaScript Debug.main.html" />
       </list>
     </recent_temporary>
   </component>
@@ -78,6 +86,7 @@
       <workItem from="1622359813237" duration="3130000" />
       <workItem from="1623372657024" duration="789000" />
       <workItem from="1623502659948" duration="5721000" />
+      <workItem from="1623561074766" duration="5020000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] (#4) - Bootstrap 추가">
       <created>1622099964570</created>
@@ -205,7 +214,35 @@
       <option name="project" value="LOCAL" />
       <updated>1623524644411</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[ADD] (#6) - Add smooth zoom in map">
+      <created>1623526446941</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1623526446941</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[ADD] (#6) - Change map language from Korean to English">
+      <created>1623561645330</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1623561645330</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[CHORE] (#6) - Restore deleted navbar animation effects">
+      <created>1623592277569</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1623592277569</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[FEAT] Add Footer at abroad and restaurant page">
+      <created>1623594012379</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1623594012379</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +253,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/6-main-page-tasks" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -244,6 +293,10 @@
     <MESSAGE value="[CHORE] (#6) - Modify grammatical error" />
     <MESSAGE value="[ADD] (#6) - Add smooth zoom feature in map" />
     <MESSAGE value="[ADD] (#6) - Add animation effect at first carousel view" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (#6) - Add animation effect at first carousel view" />
+    <MESSAGE value="[ADD] (#6) - Add smooth zoom in map" />
+    <MESSAGE value="[ADD] (#6) - Change map language from Korean to English" />
+    <MESSAGE value="[CHORE] (#6) - Restore deleted navbar animation effects" />
+    <MESSAGE value="[FEAT] Add Footer at abroad and restaurant page" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FEAT] Add Footer at abroad and restaurant page" />
   </component>
 </project>

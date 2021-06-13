@@ -9,7 +9,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <link href="./style.css" rel="stylesheet" />
-  <!--Load the AJAX API-->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <script type="text/javascript" src="piechart.js"></script>
@@ -18,7 +17,6 @@
 </head>
 
 <body class="bg_main">
-  <!--Navigation-->
   <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="margin-left: 30px">
       <div class="container-fluid">
@@ -62,7 +60,6 @@
         <div class="carousel-item active" data-bs-interval="5000">
           <img src="img/bg_1.jpg" alt="">
           <div class="carousel-caption container" style="margin-right: 900px; width: 700px; margin-top: 50px;">
-            <!--                    <h1 class="display-2">Welcome To<br>CHUNGBUK National University</h1>-->
             <span class="text1">Information</span>
             <span class="text2">For international students in CBNU</span>
           </div>
@@ -82,15 +79,60 @@
     </div>
     <span class="infoImage"> 
       <img src="img/status1.jpg" alt="" class="status1 img-fluid"> 
-    </sapn>
-    <div id="pie_2020" class="pie_container"></div>
+    </span>
+    <div id="pie_2020" class="pie_container mini"></div>
   </div>
 
-  <footer id="footer">
+  <div class="container-fluid container2">
+    <div class="row">
+      <div class="col-sm-4" style="background-color: #FFFEEA;">
+        <a href="https://cia.chungbuk.ac.kr/kor"><img src="img/icon_kor.png" alt="" class="item link-animation" width="280px" height="200px"></a>
+      </div>
+      <div class="col-sm-4" style="background-color: #FBFFE0;">
+        <a href="https://cia.chungbuk.ac.kr/edu"><img src="img/icon_eng.png" alt="" class="item link-animation" width="280px" height="200px"></a>
+      </div>
+      <div class="col-sm-4" style="background-color: #FFFEE0;">
+        <a href="https://www.chungbuk.ac.kr/intro/index.jsp"><img src="img/icon_cbnu.png" alt="" class="item link-animation" width="280px" height="200px"></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
     <div>
       <p>Div for Developer and Other links</p>
     </div>
+    <div class="footerContainer">
+      <div class="row" id="footerRow">
+        <div class="footer-col">
+          <h4>Related Sites</h4>
+          <ul class="footerUlClass">
+            <li><a href="https://cia.chungbuk.ac.kr/eng">CBNU OIS</a></li>
+            <li><a href="https://www.chungbuk.ac.kr/site/english/main.do">CBNU Official</a></li>
+            <li><a href="https://www.chungbuk.ac.kr/site/english/sub.do?key=446">About CBNU</a></li>
+            <li><a href="https://www.chungbuk.ac.kr/site/english/sub.do?key=452">Campus Tour</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <ul class="footerUlClass">
+            <li><a href="https://github.com/WonJoongLee">WonJoong</a></li>
+            <li><a href="https://github.com/DongWooE">DongWoo</a></li>
+            <li><a href="https://github.com/L-o-g-a-n">SeongJin</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow CBNU</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/cbnu1"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/cbnu1951/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/chungbuk-national-university"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/channel/UChzyvVuA3hXb0ozIG248mFA/videos"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="./abroad.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
