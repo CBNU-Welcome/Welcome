@@ -108,3 +108,7 @@ a {
 .logo-animation:active {
   transform: scale(0.9);
 }
+.store-info {
+  font-size: 20px;
+  font-family: sans-serif;
+}
