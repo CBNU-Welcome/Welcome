@@ -57,9 +57,17 @@ function myMap(){
             const offCanvasElement = document.querySelector("#offcanvasExample");
             const state = offCanvasElement.style.visibility; 
             if (state === "hidden") { 
-            let element = document.getElementById("storeName");
-            element.innerText = `${everyRestInfo[i][j].name}`
-            
+            let element1 = document.getElementById("storeName");
+            element1.innerText = `${everyRestInfo[i][j].name}`;
+            let element2 = document.getElementById("locationX");
+            element2.innerText = `${everyRestInfo[i][j].locationX}`;
+            let element3 = document.getElementById("locationY");
+            element3.innerText = `${everyRestInfo[i][j].locationY}`;
+            let element4 = document.getElementById("link");
+            element4.innerText = `${everyRestInfo[i][j].link}`;
+            let element5 = document.getElementById("hash");
+            element5.innerText = `${everyRestInfo[i][j].hash}`;
+
             offCanvasElement.style.visibility= "visible"; 
             offCanvasElement.classList.add("show"); 
             }
