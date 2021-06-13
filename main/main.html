@@ -157,12 +157,15 @@
     </div>
     </div>
 
-    <!--Google 지도 API 사용 스크립트-->
-    <script type="text/javascript" src="config.js"></script>
     <!--TODO 이 부분 키 추가해야 함!-->
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcvWlh4WgVHdfJOQbg0WvHSYqgfs-LVG8&callback=initMap&region=kr"
-            async defer></script>
+    <script type="text/javascript" src="../restaurant/secretKey.js"></script>
+    <script type="text/javascript">
+        const API_KEY = secretkey;
+        console.log(API_KEY);
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&language=en&callback=initMap`;
+        document.body.append(script);
+    </script>
     <script type="text/javascript" src="index.js">
     </script>
 
