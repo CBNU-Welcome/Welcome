@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 header {
     top: 0;
     left: 0;
@@ -124,15 +123,6 @@ td {
     font-size: 1.5vw;
     line-height: 1;
 }
-
-/*#footer {*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  background-color: #e9e9e9;*/
-/*  font-size: 20px;*/
-/*  height: 30px;*/
-/*  line-height: 30px;*/
-/*}*/
 
 .footerContainer{
     font-family: 'Poppins', sans-serif;
@@ -313,22 +303,6 @@ a {
     position: relative;
     animation: text 3s 1;
 }
-
-.text2 {
-    font-size: 30px;
-    color: black;
-    animation: change 2.6s step-end both;
-}
-
-@keyframes change {
-    from {
-        color: transparent;
-    }
-    to {
-        color: black;
-    }
-}
-
 
 .text2 {
     font-size: 30px;
