@@ -96,3 +96,15 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
+
+.logo-animation {
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.logo-animation:hover {
+  transform: scale(1.03);
+}
+
+.logo-animation:active {
+  transform: scale(0.9);
+}
