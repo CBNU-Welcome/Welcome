@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[ADD] (#6) - Add animation effect at first carousel view">
+    <list default="true" id="cae06e82-f494-4072-bb86-9a9b7793f424" name="Default Changelist" comment="[ADD] (#6) - Add smooth zoom in map">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +79,7 @@
       <workItem from="1622359813237" duration="3130000" />
       <workItem from="1623372657024" duration="789000" />
       <workItem from="1623502659948" duration="5721000" />
+      <workItem from="1623561074766" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] (#4) - Bootstrap 추가">
       <created>1622099964570</created>
@@ -205,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623524644411</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[ADD] (#6) - Add smooth zoom in map">
+      <created>1623526446941</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1623526446941</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +253,7 @@
     <MESSAGE value="[CHORE] (#6) - Modify grammatical error" />
     <MESSAGE value="[ADD] (#6) - Add smooth zoom feature in map" />
     <MESSAGE value="[ADD] (#6) - Add animation effect at first carousel view" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (#6) - Add animation effect at first carousel view" />
+    <MESSAGE value="[ADD] (#6) - Add smooth zoom in map" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] (#6) - Add smooth zoom in map" />
   </component>
 </project>
