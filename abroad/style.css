@@ -54,9 +54,9 @@ header {
 }
 
 .status2 {
-  margin: 40px 8.5%;
-  width: 1500px;
-  height: 200px;
+  margin: 40px 12.5%;
+  width: 1400px;
+  height: 160px;
 }
 
 .pie_container {
@@ -66,12 +66,12 @@ header {
 
 .geo_container {
   display: flex;
-  justify-content: center;
 }
 
 .geo_container {
   width: 800px;
-  margin: 30px auto;
+  margin: 0px 450px;
+  margin-bottom: 30px;
 }
 
 ul,
@@ -105,7 +105,7 @@ a {
 
 .container1 {
   background-color: #fffede;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .infoImage {
@@ -159,7 +159,7 @@ a {
   color: black;
   background-color: transparent;
   position: relative;
-  left: 100%;
+  left: 95%;
   -webkit-animation: tracking-in-contract-bck-top 1s
     cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -203,7 +203,7 @@ a {
   font-size: 30px;
   color: black;
   position: relative;
-  left: 100%;
+  left: 95%;
   -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: focus-in-expand 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
