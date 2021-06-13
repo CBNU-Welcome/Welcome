@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 header {
     top: 0;
     left: 0;
@@ -11,6 +14,7 @@ ul {
 
 body {
     font-family: "Times New Roman", serif;
+
 }
 
 .carousel-inner img {
@@ -69,7 +73,8 @@ table {
     border-spacing: 5px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid crimson;
     border-collapse: collapse;
     border-spacing: 5px;
@@ -106,46 +111,139 @@ th, td {
 #infoDiv1Text {
     font-family: "Times New Roman", serif;
     font-size: 1.5vw;
-    line-height: 1.0;
+    line-height: 1;
 }
 
 #infoDiv2Text {
     font-family: "Times New Roman", serif;
     font-size: 1.5vw;
-    line-height: 1.0;
+    line-height: 1;
 }
 
 #infoDiv3Text {
     font-family: "Times New Roman", serif;
     font-size: 1.5vw;
-    line-height: 1.0;
+    line-height: 1;
 }
 
-#footer {
+/*#footer {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  background-color: #e9e9e9;*/
+/*  font-size: 20px;*/
+/*  height: 30px;*/
+/*  line-height: 30px;*/
+/*}*/
+
+.footerContainer{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
     display: flex;
-    justify-content: center;
-    background-color: #e9e9e9;
-    font-size: 20px;
-    height: 30px;
-    line-height: 30px;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:  #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #FFFFFF;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255 0.2);
+    margin: 0px 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col{
+        width: 100%;
+    }
 }
 
 #wayToCBNUDiv {
     align-items: center;
 }
 
-.infoImage{
+.infoImage {
     overflow: hidden;
-
 }
 
-.infoImage img{
+.infoImage img {
     background-size: 100%;
     background-position: center;
     transition: 0.45s ease-in-out;
 }
 
-.infoImage:hover img{
+.infoImage:hover img {
     transform: scale(1.2);
 }
 
@@ -154,7 +252,7 @@ th, td {
     height: 100px;
     border: none;
     color: #815854;
-    background-color: #F9EBDE;
+    background-color: #f9ebde;
     border-radius: 4px;
     box-shadow: inset 0 0 0 0 #815854;
     transition: ease-out 0.3s;
@@ -168,9 +266,8 @@ th, td {
 .btn-1:hover {
     box-shadow: inset 300px 0 0 0 #815854;
     cursor: pointer;
-    color: #F9EBDE;
+    color: #f9ebde;
 }
-
 
 ul,
 li {
@@ -202,12 +299,12 @@ a {
     font-family: sans-serif;
 }
 
-.container span{
+.container span {
     display: block;
     text-transform: uppercase;
 }
 
-.text1{
+.text1 {
     font-size: 55px;
     font-weight: 700;
     letter-spacing: 8px;
@@ -218,27 +315,31 @@ a {
     animation: text 3s 1;
 }
 
-.text2{
+.text2 {
     font-size: 30px;
     color: black;
-    animation : change 2.6s step-end both;
+    animation: change 2.6s step-end both;
 }
 
 @keyframes change {
-    from {color:transparent}
-    to  {color: black}
+    from {
+        color: transparent;
+    }
+    to {
+        color: black;
+    }
 }
 
-@keyframes text{
-    0%{
-        color:black;
+@keyframes text {
+    0% {
+        color: black;
         margin-bottom: -40px;
     }
-    30%{
+    30% {
         letter-spacing: 25px;
         margin-bottom: -40px;
     }
-    85%{
+    85% {
         letter-spacing: 8px;
         margin-bottom: -40px;
     }
