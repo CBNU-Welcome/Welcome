@@ -59,6 +59,7 @@ function myMap(){
             if (state === "hidden") { 
             let element = document.getElementById("storeName");
             element.innerText = `${everyRestInfo[i][j].name}`
+            
             offCanvasElement.style.visibility= "visible"; 
             offCanvasElement.classList.add("show"); 
             }
