@@ -16,25 +16,21 @@ ul {
 }
 
 .navbar {
-  /*z-index: 9;*/
   position: fixed;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 header {
-  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 40px; */
   transition: top 0.2s ease-in-out;
 }
 
 #footer {
-  /* display: flex;
-  justify-content: center; */
-  float: left;
+  display: flex;
+  justify-content: center;
   background-color: #e9e9e9;
   font-size: 20px;
   height: 30px;
@@ -66,9 +62,6 @@ header {
 
 .geo_container {
   display: flex;
-}
-
-.geo_container {
   width: 800px;
   margin: 0px 450px;
   margin-bottom: 30px;
@@ -126,7 +119,6 @@ a {
   position: relative;
   width: 100%;
   top: 0;
-  /* z-index: 0; */
 }
 
 .carousel-inner img {
@@ -135,7 +127,6 @@ a {
 }
 
 .carousel-caption {
-  /*position: absolute;*/
   top: 20%;
   transform: translateY(-20%);
 }
@@ -274,4 +265,34 @@ a {
 
 .logo-animation:active {
   transform: scale(0.9);
+}
+
+.link-animation {
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.link-animation:hover {
+  transform: scale(1.08);
+}
+
+.link-animation:active {
+  transform: scale(0.9);
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9e9;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 30px 90px;
+  width: 200px;
+  height: 150px;
 }
