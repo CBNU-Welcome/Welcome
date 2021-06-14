@@ -13,4 +13,9 @@ Welcome is a front-end web page for international students in Chungbuk National 
     <td><img src="https://github.com/DongWooE.png" width="150"></td>
     <td><img src="https://github.com/WonJoongLee.png" width="150"></td>
   </tr>
+  <tr align="center">
+    <td><a href="https://github.com/CBNU-Welcome/Welcome/tree/develop/abroad">Information Page</a></td>
+    <td><a href="https://github.com/CBNU-Welcome/Welcome/tree/develop/restaurant">Restaurant Page</a></td>
+    <td><a href="https://github.com/CBNU-Welcome/Welcome/tree/develop/main">Main Page</a></td>
+  </tr>
 </table>
