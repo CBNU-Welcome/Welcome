@@ -19,3 +19,22 @@ Welcome is a front-end web page for international students in Chungbuk National 
     <td><a href="https://github.com/CBNU-Welcome/Welcome/tree/develop/main">Main Page</a></td>
   </tr>
 </table>
+
+
+Info
+------
+- language : **javascript, html, css**
+
+Getting Start
+-------
+you should get your own google map api key
+
+
+After that add 'secretKey.js' in /restaurant
+```js
+const secretkey = secretKey();
+
+function secretKey(){
+    return "[YOUR API KEY]";
+}
+````
